@@ -75,7 +75,7 @@
 	<section class="col-lg-12">
 
 		<form role="form" class="col-lg-6 cadatro-locations" method="post"
-			action="location">
+			action="cadastrar">
 			<div class="form-group col-lg-12">
 				<label for="nome">Nome</label> <input type="text"
 					class="form-control" id="nome" placeholder="Nome"

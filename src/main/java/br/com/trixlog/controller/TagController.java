@@ -6,7 +6,6 @@ import javax.inject.Inject;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
-import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.view.Results;
 import br.com.trixlog.model.Location;
@@ -18,30 +17,17 @@ import br.com.trixlog.util.Transactional;
 @Controller
 public class TagController {
 
+	@Inject
 	private LocationNgc locationNgc;
+	@Inject
 	private TagNgc tagNgc;
+	@Inject
 	private ControllerUtils utils;
 
-	/**
-	 * @deprecated CDI eyes only
-	 */
-	protected TagController() {
-		this(null, null, null);
-	}
-	
-	@Inject
-	public TagController(ControllerUtils utils, LocationNgc locationNgc, TagNgc tagNgc){
-		this.utils = utils;
-		this.locationNgc = locationNgc;
-		this.tagNgc = tagNgc;
-	}
-	
-	
 	@Transactional
 	@Get("/tag/novo")
 	public void pgcadastrartag(){
 		try {
-			System.out.println(locationNgc.listarTodos(Location.class).size());
 			utils.setAtributoRequest("listaLocations", locationNgc.listarTodos(Location.class));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

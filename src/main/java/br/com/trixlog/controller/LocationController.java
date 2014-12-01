@@ -18,27 +18,16 @@ import br.com.trixlog.util.Transactional;
 @Controller
 public class LocationController {
 
+	@Inject
 	private LocationNgc locationNgc;
+	@Inject
 	private ControllerUtils utils;
 
-	/**
-	 * @deprecated CDI eyes only
-	 */
-	protected LocationController() {
-		this(null, null);
-	}
-	
-	@Inject
-	public LocationController(ControllerUtils utils, LocationNgc locationNgc){
-		this.utils = utils;
-		this.locationNgc = locationNgc;
-	}
-	
 	@Get("/location/novo")
 	public void pgcadastrarlocation(){}
 	
 	@Transactional
-	@Post("/location")
+	@Post("/location/cadastrar")
 	public void cadastrarLocation(Location location){
 		location.setDataCriacao(new Date());
 		try {
