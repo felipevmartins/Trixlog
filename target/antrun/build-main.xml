@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy file="C:\Users\Felipe\Downloads\vraptor-blank-project/pom-dist.xml" todir="C:\Users\Felipe\Downloads\vraptor-blank-project\target"/>
-  <replace file="C:\Users\Felipe\Downloads\vraptor-blank-project\target/pom-dist.xml" value="4.1.0.Final" token="VRAPTOR_VERSION_HERE"/>
+  <copy file="C:\Users\Felipe\Downloads\trixlog/pom-dist.xml" todir="C:\Users\Felipe\Downloads\trixlog\target"/>
+  <replace file="C:\Users\Felipe\Downloads\trixlog\target/pom-dist.xml" value="4.1.1" token="VRAPTOR_VERSION_HERE"/>
 </target>
 </project>

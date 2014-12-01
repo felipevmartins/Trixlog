@@ -57,7 +57,8 @@ function clicaItemLista(id) {
 				initialize(latitude, longitude, 18, true);
 			}
 		}
-		 $.get( "tags/id/" + id, function(data2) {
+		 $.get( "../tag/id/" + id, function(data2) {
+			 tags ="";
 			 for (i = 0; i < data2.tags.length; i++) { 
 				    tags += "<div>"+data2.tags[i].name + "</div><br>";
 				}

@@ -42,13 +42,13 @@
 						</a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a
-									href="pgcadastrarlocation">Cadastrar</a></li>
+									href="<fmt:message key="app.url.static"/>location/novo">Cadastrar</a></li>
 								<li><a
-									href="<fmt:message key="app.url.static"/>public/pgalterarlocations">Editar</a></li>
+									href="<fmt:message key="app.url.static"/>location/editar">Editar</a></li>
 								<li><a
-									href="<fmt:message key="app.url.static"/>public/pgdeletarlocations">Excluir</a></li>
+									href="<fmt:message key="app.url.static"/>location/deletar">Excluir</a></li>
 								<li><a
-									href="pglistarlocations">Listar</a></li>
+									href="<fmt:message key="app.url.static"/>location/listar">Listar</a></li>
 							</ul></li>
 						<li class="dropdown"><a href="#" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-expanded="false">Tags
@@ -56,7 +56,7 @@
 						</a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a
-									href="<fmt:message key="app.url.static"/>public/pgcadastrartag">Cadastrar</a></li>
+									href="<fmt:message key="app.url.static"/>tag/novo">Cadastrar</a></li>
 							</ul></li>
 					</ul>
 					<form class="navbar-form navbar-left" role="search"></form>

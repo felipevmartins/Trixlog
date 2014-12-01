@@ -22,11 +22,3 @@ li.alterar-list-group:hover{
 	background-color: #f5f5f5 !important;
 }
 
-.dropdown-menu.open{
-	background: transparent;
-	border: none;
-	height: 1px;
-	padding: 0;
-	max-height: auto !important;
-	overflow: auto !important;
-}
